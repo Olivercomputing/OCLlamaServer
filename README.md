@@ -1,4 +1,4 @@
-# oc-llama-server
+# OCLlamaServer
 
 A complete, type-safe Python client library for the [llama.cpp HTTP server](https://github.com/ggml-org/llama.cpp/tree/master/tools/server) API.
 
