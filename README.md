@@ -75,23 +75,6 @@ print("wheel smoke test passed")
 PY
 ```
 
-### Publishing to PyPI
-
-GitHub Actions Trusted Publishing is configured in
-`.github/workflows/publish.yml`. Publishing happens when a GitHub Release is
-published.
-
-Before the first release, add a PyPI Trusted Publisher for:
-
-- Owner: your GitHub user or organization
-- Repository: `OCLlamaServer`
-- Workflow: `publish.yml`
-- Environment: `pypi`
-
-Then bump the package version in `src/OCLlamaServer/__about__.py`, create a GitHub
-Release, and the workflow will build and publish the wheel and sdist to PyPI
-without storing a long-lived API token in GitHub.
-
 ## Quick Start
 
 ### Synchronous
