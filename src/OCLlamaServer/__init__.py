@@ -26,6 +26,7 @@ Async usage::
         print(result.content)
 """
 
+from .__about__ import __version__
 from .async_client import AsyncOCLlamaClient
 from .client import OCLlamaClient
 from .exceptions import (
@@ -80,8 +81,6 @@ from .types import (
     TokenProbability,
     TokenProbInfo,
 )
-
-__version__ = "1.0.0"
 
 __all__ = [
     # Clients

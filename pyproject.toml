@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "oc-llama-server"
-version = "1.0.0"
+dynamic = ["version"]
 description = "Complete Python client library for local llama.cpp HTTP server API"
 readme = "README.md"
 license = { text = "MIT" }
@@ -35,6 +35,9 @@ include = [
     "/README.md",
     "/pyproject.toml",
 ]
+
+[tool.hatch.version]
+path = "src/OCLlamaServer/__about__.py"
 
 [tool.ruff]
 target-version = "py311"
