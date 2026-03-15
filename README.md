@@ -19,18 +19,18 @@ Covers **all 33 endpoints** across five API categories - core completions, OpenA
 ## Installation
 
 ```bash
-pip install --extra-index-url "https://Olivercomputing.github.io/LlamaCPPServerWheel/simple/" oc-llama-server
+pip install --extra-index-url "https://Olivercomputing.github.io/LlamaCPPCudaWheel/simple/" oc-llama-server
 ```
 
 Or install from source:
 
 ```bash
-pip install --extra-index-url "https://Olivercomputing.github.io/LlamaCPPServerWheel/simple/" -e ".[dev]"
+pip install --extra-index-url "https://Olivercomputing.github.io/LlamaCPPCudaWheel/simple/" -e ".[dev]"
 ```
 
 The extra index is required so `pip` can resolve the bundled
 `llama-cpp-cuda-binaries` dependency from:
-`https://Olivercomputing.github.io/LlamaCPPServerWheel/simple/`
+`https://Olivercomputing.github.io/LlamaCPPCudaWheel/simple/`
 
 ## Development
 
@@ -46,7 +46,7 @@ then run the test suite and build a wheel locally:
 python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
-pip install --extra-index-url "https://Olivercomputing.github.io/LlamaCPPServerWheel/simple/" -e ".[dev]"
+pip install --extra-index-url "https://Olivercomputing.github.io/LlamaCPPCudaWheel/simple/" -e ".[dev]"
 pytest -q
 python -m build
 ```
@@ -59,7 +59,7 @@ After building, validate the built wheel in a fresh environment:
 python -m venv .venv-wheel
 source .venv-wheel/bin/activate
 pip install --upgrade pip
-pip install --extra-index-url "https://Olivercomputing.github.io/LlamaCPPServerWheel/simple/" dist/*.whl
+pip install --extra-index-url "https://Olivercomputing.github.io/LlamaCPPCudaWheel/simple/" dist/*.whl
 python - <<'PY'
 import importlib.resources as resources
 
